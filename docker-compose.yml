@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  frontend:
+    build: './blackjack-frontend'
+    ports:
+      - "5002:5002"
+  backend:
+    build: './blackjack-backend'
+    ports:
+      - "5001:5001"
